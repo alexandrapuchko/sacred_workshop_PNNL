@@ -30,6 +30,7 @@ def run(C, gamma, _run):
         per = permutation(iris.target.size)
         iris.data = iris.data[per]
         iris.target = iris.target[per]
+        
         #create an SVM classifier with 'rbf' kernel
         clf = svm.SVC(C, 'rbf', gamma=gamma)
         
